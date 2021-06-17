@@ -11,6 +11,8 @@ public class SceneLoader : MonoBehaviour
         // На данном этапе активная сцена это SampleScene
         SceneManager.LoadScene("SceneTwo", LoadSceneMode.Additive);
         StartCoroutine(WaitForSceneLoad(SceneManager.GetSceneByName("SceneTwo")));
+
+        //GameObject.FindGameObjectWithTag("DisplayableObjects").SetActive(false);
     }
 
     public void LoadPreviousScene()
